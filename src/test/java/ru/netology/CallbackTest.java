@@ -35,7 +35,7 @@ class CallbackTest {
 
     @Test
     void test() {
-        driver.get("http://0.0.0.0:7777/");
+        driver.get("http://localhost:7777/");
 
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Петр Петров");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+71231231234");
