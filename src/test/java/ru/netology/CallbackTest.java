@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.open;
 class CallbackTest {
     @BeforeEach
     void openWebBank() {
-        open("http://localhost:7777/");
+        open("http://localhost:9999/");
     }
 
     @Test
