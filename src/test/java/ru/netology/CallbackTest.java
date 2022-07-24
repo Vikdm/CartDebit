@@ -29,5 +29,13 @@ class CallbackTest {
         $("[data-test-id='order-success']").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
     }
 
-
+    @Test
+    void test2() {
+        SelenideElement form = $(".form");
+        form.$("[data-test-id=name] input").setValue("Анна-Мария Антуаннета");
+        form.$("[data-test-id=phone] input").setValue("+71231231234");
+        form.$("[data-test-id=agreement]").click();
+        form.$("button").click();
+        $("[data-test-id='order-success']").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+    }
 }
