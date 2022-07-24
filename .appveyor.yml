@@ -12,5 +12,6 @@ install:
   java -jar app-order.jar -port=7777  &
 
 build_script:
+  - chmod +x gradlew
   - ./gradlew test -Dselenide.headless=true
 
