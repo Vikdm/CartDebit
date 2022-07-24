@@ -9,9 +9,8 @@ branches:
 build: off
 
 install:
-  java -jar app-order.jar  &
+  java -jar app-order.jar -port=7777  &
 
 build_script:
-  - chmod +x gradlew
-  - ./gradlew test --info "-Dselenide.headless=true"
+  - ./gradlew test -Dselenide.headless=true
 
