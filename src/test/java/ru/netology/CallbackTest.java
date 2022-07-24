@@ -16,6 +16,7 @@ class CallbackTest {
     @BeforeEach
     void openWebBank() {
         open("http://localhost:7777/");
+
     }
 
     @Test
